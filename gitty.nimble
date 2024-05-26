@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.3"
+version       = "0.1.4"
 author        = "Christian Brendlin"
 description   = "Easily create .gitignore files from your terminal"
 license       = "MIT"
