@@ -41,3 +41,11 @@ You can now move the executable to `/usr/local/bin` or to any other **PATH** dir
     gitty rust nim # creates a .gitignore for rust and nim
 ```
 
+
+## Roadmap
+### This list is constantly updated
+
+- Installation script, install without the need of nim installed on your system
+
+- Custom **.gitignores**
+
