@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.1"
+version       = "0.1.2"
 author        = "Christian Brendlin"
 description   = "Easily create .gitignore files from your terminal"
 license       = "BSD-3-Clause"
