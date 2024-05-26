@@ -1,1 +1,3 @@
-lang: nim
+language: nim
+script: echo 'testing'
+install: skip
