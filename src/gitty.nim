@@ -9,7 +9,7 @@ import std/strutils
 proc parseArgs(): (seq[string], string) =
   let args = commandLineParams() 
   if args.len < 1:
-    quit("Verwendung: nimble run <Sprachen/Tools>... [--output=<Dateiname>]")
+    quit("Please specify a language or a tool: gitty <lang>")
 
   var languages = newSeq[string]()
   var filename = ".gitignore"
