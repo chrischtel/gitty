@@ -1,14 +1,43 @@
-# MyGitignore
 
-MyGitignore is a Nim program that creates a `.gitignore` file based on multiple specified languages and tools. It uses the Toptal API to fetch the appropriate `.gitignore` templates.
+# Gitty
 
-## Prerequisites
+Easily create **`.gitignore`** in your terminal. I made this because when I am programming in Zig and other languages, where .gitignore's doesn't automatically get created, i can easily create them in my terminal.
 
-- Nim Version 2.0.4
-- Nimble (included with Nim)
+![GitHub License](https://img.shields.io/github/license/chrischtel/gitty)
+
+
+
+## Appendix
+
+This readme and the project are barley finished. This project is very young.
+
 
 ## Installation
 
-Run the following script to ensure Nim Version 2.0.4 is installed, build the program, and move it to `/usr/local/bin`:
+Make sure to have **`nim`** installed on your system.
 
-Move the executable to path**
+```bash
+  nimble install gitty
+  
+  # If you want to install globally on your system
+  nimble install gitty -g
+```
+    
+## Building from source
+```bash
+    $ git clone https://github.com/chrischtel/gitty.git # Clone the repository
+
+    $ cd gitty
+
+    $ nimble build -d:release -d:ssl # Build the project
+```
+
+You can now move the executable to `/usr/local/bin` or to any other **PATH** directory
+
+## Usage/Examples
+
+```bash
+    gitty rust # creates a .gitignore for rust
+    gitty rust nim # creates a .gitignore for rust and nim
+```
+
