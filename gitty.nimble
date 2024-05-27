@@ -11,3 +11,4 @@ bin           = @["gitty"]
 # Dependencies
 
 requires "nim >= 2.0.4"
+requires "gitty >= 0.1.5"
