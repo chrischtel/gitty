@@ -27,6 +27,8 @@ release-job:
   script:
     - git config --global user.email "ci@example.com"
     - git config --global user.name "CI/CD Pipeline"
+    - git remote add origin https://gitlab.com/chrischtel/gitty.git
+    - git fetch origin
     - git checkout trunk
     - git merge --ff-only $CI_COMMIT_TAG
     - git tag $CI_COMMIT_TAG
