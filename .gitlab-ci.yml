@@ -1,3 +1,4 @@
+
 stages:
   - check
   - build
@@ -27,12 +28,14 @@ release-job:
   script:
     - git config --global user.email "ci@example.com"
     - git config --global user.name "CI/CD Pipeline"
+    - git remote set-url origin https://gitlab.com/your-username/your-repo.git
     - git fetch origin
     - git checkout trunk
     - git merge --ff-only $CI_COMMIT_TAG
-    - git tag $CI_COMMIT_TAG
+    - final_tag=${CI_COMMIT_TAG%-rc}
+    - git tag $final_tag
     - git push origin trunk
-    - git push origin $CI_COMMIT_TAG
+    - git push origin $final_tag
   only:
     - tags
   dependencies:
